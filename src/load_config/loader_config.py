@@ -1,5 +1,5 @@
 import json
-
+import os
 class ConfigLoader:
     
   
@@ -11,6 +11,7 @@ class ConfigLoader:
     '''
     
     def load_config(path="/mount/src/config/config_streamlit.json"):
+        path = os.path.join(os.path.dirname(__file__), "../../config/config_streamlit.json")
         with open(path, "r", encoding="utf-8") as config:
             data = json.load(config)
         return data

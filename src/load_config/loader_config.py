@@ -12,7 +12,7 @@ class ConfigLoader:
     
     def load_config():
         # Path relative to the project root
-        path = os.path.join("config", "config_streamlit.json")
+        path = os.path.join("src","config", "config_streamlit.json")
         path = os.path.abspath(path)  # optional, ensures absolute path
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)

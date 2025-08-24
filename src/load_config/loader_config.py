@@ -10,12 +10,13 @@ class ConfigLoader:
         return data
     '''
     
-    def load_config(path="/mount/src/config/config_streamlit.json"):
-        path = os.path.join(os.path.dirname(__file__), "../../config/config_streamlit.json")
-        with open(path, "r", encoding="utf-8") as config:
-            data = json.load(config)
+    def load_config():
+        # Path relative to the project root
+        path = os.path.join("config", "config_streamlit.json")
+        path = os.path.abspath(path)  # optional, ensures absolute path
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
         return data
-        
     
 class GetSetting:
     @staticmethod

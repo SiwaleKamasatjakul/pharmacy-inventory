@@ -1,5 +1,5 @@
 {
-    "SAP": "./data/SAP_Hospital_Inventory_Extended_Sample.csv",
+    "SAP": "data/SAP_Hospital_Inventory_Extended_Sample.csv",
     "MAX_STOCK_LEVEL": {
         "MED123": 516,
         "MED321": 512,
@@ -7,5 +7,5 @@
         "MED654": 515,
         "MED789": 515
     },
-    "Robot_Log": "./data/Robot_Log_Data_for_Dashboard.xlsx"
+    "Robot_Log": "data/Robot_Log_Data_for_Dashboard.xlsx"
 }

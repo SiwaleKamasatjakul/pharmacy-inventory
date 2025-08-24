@@ -3,13 +3,17 @@ import json
 class ConfigLoader:
     
   
-
+    '''
     def load_config(path=r"C:/Users/banas/OneDrive/เอกสาร/3. Work/Hospital-Inventory/src/config/config.json"):
         with open(path, "r", encoding="utf-8") as config:
             data = json.load(config)
         return data
-
-        
+    '''
+    
+    def load_config(path="/mount/src/config/config_streamlit.json"):
+        with open(path, "r", encoding="utf-8") as config:
+            data = json.load(config)
+        return data
         
     
 class GetSetting:

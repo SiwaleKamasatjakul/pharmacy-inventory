@@ -10,6 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 
 from page.StockAlert import View
 from page.Dashboard import DashboardView
+from page.DrugRoute import DrugRouteDashbord
 
 
 
@@ -57,6 +58,8 @@ if page == "home":
     st.title("🏠 Home")
 elif page == "drug":
     st.title("💊 Drug route tracker")
+    DrugRouteDashbord.dashboard()
+    
 elif page == "stock":
     
     View.dashbord()
